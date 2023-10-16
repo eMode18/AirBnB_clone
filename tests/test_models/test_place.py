@@ -73,18 +73,18 @@ class TestPlace_instantiation(unittest.TestCase):
 
     def test_city_id_is_public_class_attribute(self):
         _place = Place()
-        self.assertEqual(str, type(Place.city_identifier))
-        self.assertIn("city_identifier", dir(_place))
-        self.assertNotIn("city_identifier", _place.__dict__)
+        self.assertEqual(str, type(Place.city_id))
+        self.assertIn("city_id", dir(_place))
+        self.assertNotIn("city_id", _place.__dict__)
 
     def test_created_at_is_public_datetime(self):
         self.assertEqual(datetime, type(Place().created_at))
 
     def test_description_is_public_class_attribute(self):
         _place = Place()
-        self.assertEqual(str, type(Place.place_description))
-        self.assertIn("place_description", dir(_place))
-        self.assertNotIn("place_description", _place.__dict__)
+        self.assertEqual(str, type(Place.description))
+        self.assertIn("description", dir(_place))
+        self.assertNotIn("description", _place.__dict__)
 
     def test_id_is_public_str(self):
         self.assertEqual(str, type(Place().id))
@@ -103,36 +103,36 @@ class TestPlace_instantiation(unittest.TestCase):
 
     def test_max_guest_is_public_class_attribute(self):
         _place = Place()
-        self.assertEqual(int, type(Place.max_guest_count))
-        self.assertIn("max_guest_count", dir(_place))
-        self.assertNotIn("max_guest_count", _place.__dict__)
+        self.assertEqual(int, type(Place.max_guest))
+        self.assertIn("max_guest", dir(_place))
+        self.assertNotIn("max_guest", _place.__dict__)
 
     def test_name_is_public_class_attribute(self):
         _place = Place()
-        self.assertEqual(str, type(Place.place_name))
-        self.assertIn("place_name", dir(_place))
-        self.assertNotIn("place_name", _place.__dict__)
+        self.assertEqual(str, type(Place.name))
+        self.assertIn("name", dir(_place))
+        self.assertNotIn("name", _place.__dict__)
 
     def test_new_instance_stored_in_objects(self):
         self.assertIn(Place(), models.storage.all().values())
 
     def test_number_bathrooms_is_public_class_attribute(self):
         _place = Place()
-        self.assertEqual(int, type(Place.bathroom_count))
-        self.assertIn("bathroom_count", dir(_place))
-        self.assertNotIn("bathroom_count", _place.__dict__)
+        self.assertEqual(int, type(Place.number_bathrooms))
+        self.assertIn("number_bathrooms", dir(_place))
+        self.assertNotIn("number_bathrooms", _place.__dict__)
 
     def test_number_rooms_is_public_class_attribute(self):
         _place = Place()
-        self.assertEqual(int, type(Place.room_count))
-        self.assertIn("room_count", dir(_place))
-        self.assertNotIn("room_count", _place.__dict__)
+        self.assertEqual(int, type(Place.number_rooms))
+        self.assertIn("number_rooms", dir(_place))
+        self.assertNotIn("number_rooms", _place.__dict__)
 
     def test_price_by_night_is_public_class_attribute(self):
         _place = Place()
-        self.assertEqual(int, type(Place.night_price))
-        self.assertIn("night_price", dir(_place))
-        self.assertNotIn("night_price", _place.__dict__)
+        self.assertEqual(int, type(Place.price_by_night))
+        self.assertIn("price_by_night", dir(_place))
+        self.assertNotIn("price_by_night", _place.__dict__)
 
     def test_str_representation(self):
         _d_time = datetime.today()
@@ -168,9 +168,9 @@ class TestPlace_instantiation(unittest.TestCase):
 
     def test_user_id_is_public_class_attribute(self):
         _place = Place()
-        self.assertEqual(str, type(Place.user_identifier))
-        self.assertIn("user_identifier", dir(_place))
-        self.assertNotIn("user_identifier", _place.__dict__)
+        self.assertEqual(str, type(Place.user_id))
+        self.assertIn("user_id", dir(_place))
+        self.assertNotIn("user_id", _place.__dict__)
 
 
 

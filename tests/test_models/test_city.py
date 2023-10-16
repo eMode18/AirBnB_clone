@@ -91,7 +91,7 @@ class TestCity_instantiation(unittest.TestCase):
 
     def test_name_is_public_class_attribute(self):
         _city = City()
-        self.assertEqual(str, type(City.city_name))
+        self.assertEqual(str, type(City.name))
         self.assertIn("name", dir(_city))
         self.assertNotIn("name", _city.__dict__)
 

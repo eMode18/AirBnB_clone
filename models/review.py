@@ -7,11 +7,11 @@ class Review(BaseModel):
     """Represent reviews.
 
     Attributes:
-        place_identifier (str): The Place identifier.
-        user_identifier (str): The User identifier.
-        review_text (str): The text of the review.
+        place_id (str): The Place identifier.
+        user_id (str): The User identifier.
+        text (str): The review's text.
     """
 
-    place_identifier = ""
-    user_identifier = ""
-    review_text = ""
+    place_id = ""
+    user_id = ""
+    text = ""

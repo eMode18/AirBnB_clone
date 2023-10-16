@@ -1,6 +1,6 @@
-import datetime
 import os
 import unittest
+from datetime import datetime
 from models.amenity import Amenity
 import models
 from time import sleep
@@ -33,9 +33,9 @@ class TestAmenity_instantiation(unittest.TestCase):
 
     def test_name_is_public_class_attribute(self):
         _amenity = Amenity()
-        self.assertEqual(str, type(Amenity.amenity_name))
-        self.assertIn("amenity_name", dir(Amenity()))
-        self.assertNotIn("amenity_name", _amenity.__dict__)
+        self.assertEqual(str, type(Amenity.name))
+        self.assertIn("name", dir(Amenity()))
+        self.assertNotIn("name", _amenity.__dict__)
 
     def test_new_instance_stored_in_objects(self):
         self.assertIn(Amenity(), models.storage.all().values())

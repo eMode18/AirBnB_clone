@@ -93,7 +93,7 @@ class TestState_instantiation(unittest.TestCase):
 
     def test_name_is_public_class_attribute(self):
         _state = State()
-        self.assertEqual(str, type(State.state_name))
+        self.assertEqual(str, type(State.name))
         self.assertIn("name", dir(_state))
         self.assertNotIn("name", _state.__dict__)
 
